@@ -3469,7 +3469,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15366.436,2.8314047,967.69531};
+					position[]={15390.058,2.8314047,926.01807};
 					id=169;
 					side="CIV";
 					vehicle="Functionary1_EP1";
@@ -3488,7 +3488,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15365.842,2.8314047,963.89142};
+					position[]={15389.464,2.8314047,922.21417};
 					azimut=433.26978;
 					id=172;
 					side="GUER";
@@ -3506,7 +3506,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15365.302,2.8314047,967.10693};
+					position[]={15388.924,2.8314047,925.42969};
 					azimut=335.93744;
 					id=171;
 					side="GUER";
@@ -3524,7 +3524,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15367.248,2.8314047,967.21698};
+					position[]={15390.87,2.8314047,925.53973};
 					azimut=399.569;
 					id=170;
 					side="GUER";
@@ -4255,7 +4255,7 @@ class Mission
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="[""GetWeapons"", ""succeded""] call SHK_TaskMaster_upd; hint ""Evening lads! You can equip yourself in the backyard, but hurry up we are already late on schudle !""; ";
+			expActiv="[""GetWeapons"", ""succeded""] call SHK_TaskMaster_upd; hintSilent ""Evening lads! You can equip yourself in the backyard, but hurry up we are already late on schudle !""; ";
 			class Effects
 			{
 			};
@@ -4387,7 +4387,6 @@ class Mission
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="hint ""moving civilian group 1"";";
 			class Effects
 			{
 			};
