@@ -13,9 +13,8 @@ if (_script_target == CIA_Contact) then {
 	task2 call SHK_TaskMaster_Add;
 	
 	sleep 1;
-	Note0 call SHK_TaskMaster_addNote;
-	Note1 call SHK_TaskMaster_addNote;
-	Note2 call SHK_TaskMaster_addNote;
+	GiveNotes = false;
+	publicVariable "GiveNotes";
 	
 	Civilian_Pilot addAction ["We're ready to take off", "ManageObjectives.sqf", "", 6, false];
 };

@@ -1,10 +1,7 @@
 
 // Include Files 
 ExecVM "ExtractCounter.sqf";
-ExecVM "path.sqf";
-Mypath = compile preprocessfile "path.sqf";
-Mypath2 = compile preprocessfile "path2.sqf";
-	
+
 
 // Create Tasks
 [[
@@ -51,6 +48,7 @@ task2 = [
     "Take the Chopper to the Embassy", 
 	"A Chopper is waiting to take you the US Embassy in Ovallestàn. Tell the pilot when you are ready to leave."
 ];
+
 task3 = [
 	"TalkToAttache", 
 	"Talk To the CIA attache", 
@@ -64,5 +62,14 @@ task4 = [
 ];
 
 // Control vars. 
-readyToTakeOff = false;
-publicVariable "readyToTakeOff";
+GiveNotes = false;
+"GiveNotes" addPublicVariableEventHandler {
+	hint "broadcast Give notes change";
+	Note0 call SHK_TaskMaster_addNote;
+	Note1 call SHK_TaskMaster_addNote;
+	Note2 call SHK_TaskMaster_addNote;
+};
+
+publicVariable "GiveNotes";
+
+
