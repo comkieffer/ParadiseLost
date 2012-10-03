@@ -28,6 +28,9 @@ if (_script_target == Civilian_Pilot) then {
 if (_script_target == CIA_Attache) then {
 	["TalkToAttache", "succeeded"] call SHK_TaskMAster_upd;
 	
+	addNotesFromAttache = true;
+	publicVariable "addNotesFromAttache";
+	
 	if (isServer) then {
 		task4 call SHK_TaskMasterAdd;
 	};
