@@ -107,8 +107,3 @@ ExecVM "AddNotesFromContact.sqf";
 ExecVM "AddNotesFromAttache.sqf";
 ExecVM "AddExplosionNotes.sqf";
 
-
-
-
-
-
