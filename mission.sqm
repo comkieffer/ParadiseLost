@@ -2610,7 +2610,7 @@ class Mission
 				{
 					position[]={13107.24,3.2662506,16770.529};
 					completitionRadius=10;
-					speed="NORMAL";
+					speed="LIMITED";
 					combat="CARELESS";
 					class Effects
 					{
