@@ -6,27 +6,30 @@ _script_target = _this select 0;
 // hint format["gen %1, caller %2, id %3", _this select 0, _this select 1, _this select 2];
 
 if (_script_target == CIA_Contact) then {
-	["TalkToContact", "succeded"] call SHK_TaskMaster_upd;
+	["TalkToContact", "succeeded"] call SHK_TaskMaster_upd;
 	
-	task3 call SHK_TaskMaster_Add;
-	sleep 1;
-	task2 call SHK_TaskMaster_Add;
+	if (isServer) then {
+		task3 call SHK_TaskMaster_Add;
+		sleep 1;
+		task2 call SHK_TaskMaster_Add;
+	};
 	
 	sleep 1;
-	GiveNotes = false;
-	publicVariable "GiveNotes";
+	AddNotesFromContact = true;
+	publicVariable "AddNotesFromContact";
 	
 	Civilian_Pilot addAction ["We're ready to take off", "ManageObjectives.sqf", "", 6, false];
 };
 
 if (_script_target == Civilian_Pilot) then {
-	["GetInChopper", "succeded"] call SHK_TaskMaster_upd;
-	Civilian_Pilot moveInDriver Civilian_Helo;
-	
-	hint "Now we count players before takeoff";
+	["GetInChopper", "succeeded"] call SHK_TaskMaster_upd;
 };
 
 if (_script_target == CIA_Attache) then {
-	["TalkToAttache", "succeded"] call SHK_TaskMAster_upd;
-	task4 call SHK_TaskMasterAdd;
+	["TalkToAttache", "succeeded"] call SHK_TaskMAster_upd;
+	
+	if (isServer) then {
+		task4 call SHK_TaskMasterAdd;
+	};
 };
+
