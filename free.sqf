@@ -4,3 +4,6 @@ _action = _this select 2;
 
 [_target] join (group _caller); //Join the group of the caller.
 ["RescueHostage", "succeded"] call SHK_TaskMaster_upd;
+
+//this might cause problems if the rescuer is the server host.
+task5 call SHK_TaskMaster_Add;

@@ -87,6 +87,12 @@ task4 = [
 	"The CIA has a weapons cache in Kespora. Go there and get some weapons."
 ];
 
+task5 = [
+	"DestroyCache",
+	"Destroy the weapons cache",
+	"Thompson just told you about a weapon cache he saw on Etnikora, HQ let you know that it's your call. You can go in or get back to base, but don't forget that the extraction is timed whatever you chose "don't get Thompson killed""
+];
+
 // Control vars. 
 if (isServer) then {
 	AddNotesFromContact = false;
