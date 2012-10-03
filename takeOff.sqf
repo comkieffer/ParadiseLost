@@ -1,1 +1,2 @@
-readyToTakeOff = true;
+HeloTakeOff = true;
+publicVariable "HelotakeOff";
