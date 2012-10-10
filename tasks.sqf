@@ -10,7 +10,7 @@ Rescue_hostage_task = [
 	"Mark Thompson, an American journalist has been captured by insurgents. He was on route to interview one of their leaders when he dispeared. Rescue him and take him to the LZ for extraction."
 ];
 
-RescueHostage call SHK_TaskMaster_Add;
+Rescue_hostage_task call SHK_TaskMaster_Add;
 
 
 Talk_to_contact_task = [
