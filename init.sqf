@@ -1,6 +1,8 @@
 
 // Include Files 
 ExecVM "ExtractCounter.sqf";
+ExecVM "notes.sqf";
+ExecVM "tasks.sqf";
 
 
 // Create Tasks
