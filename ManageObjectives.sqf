@@ -9,9 +9,9 @@ if (_script_target == CIA_Contact) then {
 	["TalkToContact", "succeeded"] call SHK_TaskMaster_upd;
 	
 	if (isServer) then {
-		task3 call SHK_TaskMaster_Add;
+		Get_in_chopper_task call SHK_TaskMaster_Add;
 		sleep 1;
-		task2 call SHK_TaskMaster_Add;
+		Talk_to_contact_task call SHK_TaskMaster_Add;
 	};
 	
 	sleep 1;
@@ -32,7 +32,7 @@ if (_script_target == CIA_Attache) then {
 	publicVariable "addNotesFromAttache";
 	
 	if (isServer) then {
-		task4 call SHK_TaskMasterAdd;
+		Get_weapons_task call SHK_TaskMasterAdd;
 	};
 };
 
