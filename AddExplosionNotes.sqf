@@ -1,5 +1,5 @@
 waitUntil {AddExplosionNotes};
 
-Note6 call SHK_TaskMaster_addNote;
+Explosion_note call SHK_TaskMaster_addNote;
 sleep 120;
-Note7 call SHK_TaskMaster_addNote;
+Extraction_update_note call SHK_TaskMaster_addNote;

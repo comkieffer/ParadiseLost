@@ -1,7 +1,7 @@
 waitUntil {addNotesFromContact};
 
-Note0 call SHK_TaskMaster_addNote;
-Note1 call SHK_TaskMaster_addNote;
-Note2 call SHK_TaskMaster_addNote;
-Note3 call SHK_TaskMaster_addNote;
-Note4 call SHK_TaskMaster_addNote;
+Mission_overview_note  call SHK_TaskMaster_addNote;
+Enemy_forces_note      call SHK_TaskMaster_addNote;
+friendly_forces_note   call SHK_TaskMaster_addNote;
+weather_notes          call SHK_TaskMaster_addNote;
+Commander_intent_note  call SHK_TaskMaster_addNote;

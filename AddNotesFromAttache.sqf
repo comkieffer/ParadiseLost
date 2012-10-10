@@ -1,3 +1,3 @@
 waitUntil {addNotesFromAttache};
 
-Note5 call SHK_TaskMaster_addNote;
+Weapons_cache_note call SHK_TaskMaster_addNote;
