@@ -1735,7 +1735,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="CIA_attache";
-					init="this setPOs [getPos this select 0, getPos this select 1, 5]; this addAction [""Do you any more information about the mission ?"", ""ManageObjectives.sqf"", """", 6, false];";
+					init="this setPOs [getPos this select 0, getPos this select 1, 5];";
 				};
 			};
 			class Waypoints
@@ -3302,7 +3302,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="CIA_Contact";
-					init="this addAction [""Have you got the intel package ?"", ""ManageObjectives.sqf"", """", 6, false];";
 				};
 			};
 		};
@@ -3394,7 +3393,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="helo2";
-					init="this addAction [""Take Off"", ""takeoff.sqf"", """" , 6, false]; clearWeaponCargo this;";
+					init="clearWeaponCargo this;";
 				};
 			};
 			class Waypoints
