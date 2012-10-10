@@ -1734,7 +1734,8 @@ class Mission
 					leader=1;
 					lock="LOCKED";
 					skill=0.60000002;
-					init="this setPOs [getPos this select 0, getPos this select 1, 5]; [""TalkToAttache"", ""succeeded""] call SHK_TaskMaster_upd;";
+					text="CIA_attache";
+					init="this setPOs [getPos this select 0, getPos this select 1, 5]; this addAction [""Do you any more information about the mission ?"", ""ManageObjectives.sqf"", """", 6, false];";
 				};
 			};
 			class Waypoints
