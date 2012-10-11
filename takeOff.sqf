@@ -1,2 +1,0 @@
-HeloTakeOff = true;
-publicVariable "HelotakeOff";
