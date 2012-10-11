@@ -1,0 +1,32 @@
+Mission flow :
+
+Spawn 
+Get out of airplane
+Leader talks to CIA contact
+	-> Team recieves Notes
+	-> Team recieves tasks 
+		-> Get in chopper
+		-> Talk to Attache
+	-> Talk Action is deactivated
+Once in chopper use action to take off
+	-> talk action is deactivated
+	-> Objective completed
+Land in Ovallestan
+Talk to attache
+	-> Objective completed
+	-> New objective + Notes added 
+		-> Goto weapons cache and equip
+Get to weapons cache
+	-> Objective completed
+Return to Ovallestan, on exiting the city BOOM
+	-> New Notes - Details on new extract
+Identify compound. Clear compound 
+	-> Problem Hostage is nowhere to be found
+	-> Search for evidence
+	-> identify possible location of the hostage 
+Clear possible hostage locations 
+Find Hostage
+Extract
+
+TODO : More details on initial extraction plan
+TODO : Ambush somewhere

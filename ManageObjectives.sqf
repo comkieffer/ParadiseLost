@@ -25,10 +25,14 @@ if (_script_target == CIA_Contact) then {
 
 if (_script_target == Helo2) then {
 	["GetInChopper", "succeeded"] call SHK_TaskMaster_upd;
+	
+	// tell the chopper to take off !
+	helo_take_off = true;
+	publicVariable "helo_take_off";
 };
 
 if (_script_target == CIA_Attache) then {
-	["TalkToAttache", "succeeded"] call SHK_TaskMAster_upd;
+	["TalkToAttache", "succeeded"] call SHK_TaskMaster_upd;
 	
 	addNotesFromAttache = true;
 	publicVariable "addNotesFromAttache";
