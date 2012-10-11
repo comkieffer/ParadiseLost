@@ -1,4 +1,6 @@
 
+private ["_script_target"];
+
 _script_target = _this select 0;
 //hint format ["Script target : %1", _script_target];
 
@@ -21,7 +23,7 @@ if (_script_target == CIA_Contact) then {
 	Civilian_Pilot addAction ["We're ready to take off", "ManageObjectives.sqf", "", 6, false];
 };
 
-if (_script_target == Civilian_Pilot) then {
+if (_script_target == Helo2) then {
 	["GetInChopper", "succeeded"] call SHK_TaskMaster_upd;
 };
 
